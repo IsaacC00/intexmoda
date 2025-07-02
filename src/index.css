@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Titillium;
+    src: url("../src/assets/fonts/TitilliumWeb-Regular.ttf");
+}
+@import "tailwindcss";
+
+@theme{
+    --font-titillium: Titillium, "sans-serif"
+}
