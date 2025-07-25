@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
-const SedeCard = ({ nombre, direccion, imagen, link ='' }) => {
+const SedeCard = ({ nombre, direccion, imagen, link = '', tel }) => {
   return (
     <div className="bg-white rounded-2xl shadow hover:shadow-lg overflow-hidden transition-all flex flex-col h-full">
-      
+
       {/* Imagen superior */}
       {imagen && (
         <img
@@ -16,12 +16,13 @@ const SedeCard = ({ nombre, direccion, imagen, link ='' }) => {
 
       {/* Contenido */}
       <div className="p-6 flex flex-col justify-between flex-grow">
-        <div>
-          <h3 className="text-xl font-bold text-blue-700 mb-2">{nombre}</h3>
-          <div className="flex items-start gap-2 text-sm text-gray-600 mb-3">
-            <MapPin className="w-4 h-4 text-blue-500 mt-1" />
-            <p className="text-gray-700">{direccion}</p>
-          </div>
+        <div className="flex flex-row items-center gap-1">
+          <MapPin className="w-4 h-4 text-blue-500" />
+          <h3 className="text-xl font-bold text-blue-700">{nombre}</h3>
+        </div>
+        <div className=" text-sm text-gray-600 mb-3">
+          <p className="mb-2">{direccion}</p>
+          <a href={`tel:${tel}`} className="font-bold">{tel}</a>
         </div>
         <div>
           <Link

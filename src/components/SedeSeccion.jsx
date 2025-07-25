@@ -12,8 +12,9 @@ const sedes = [
     imagen: ImageEight,
     nombre: 'Cali',
     principal: true,
-    direccion: `ASTRID RODRIGUEZ: Carrera 97bis #58-50 Condominio Nacar portería B. Cali - Valle del Cauca`,
-    link: '/contacto'
+    direccion: `Edificio Zaccur oficina 538 plaza de Caicedo`,
+    link: '/contacto',
+    tel:'+57 3216981779'
   },
   {
     imagen: ImageSeven,
@@ -21,7 +22,8 @@ const sedes = [
     principal: true,
     direccion: `TEMPO COWORKING Cra. 37 #19b - 35,Edificio Hito Pasto - Nariño`,
     descripcion: 'Sede principal con centro de operaciones, showroom, y espacios colaborativos para diseñadores y emprendedores.',
-    link: '/contacto'
+    link: '/contacto',
+    tel:'+57 3235071392'
   },
   {
     imagen: Image,
@@ -29,34 +31,40 @@ const sedes = [
     principal: true,
     direccion: `Río Palora OE2-50 y Av. de la Prensa.`,
     descripcion: 'Sede principal con centro de operaciones, showroom, y espacios colaborativos para diseñadores y emprendedores.',
-    link: '/contacto'
+    link: '/contacto',
+    tel:'+593 990888619'
   },
   {
     imagen: ImageTwo,
     nombre: 'Atuntaqui',
     direccion: 'Río Amazonas y Pérez Muñoz, Edificio Pasteur, 2 do. piso.',
     descripcion: 'Apoyo a emprendedores textiles, patronaje digital y maquinaria moderna.',
+    link: '/contacto',
+    tel:'+593 990888619'
   },
   {
     imagen: ImageThree,
     nombre: 'Ambato',
     direccion: 'Francisco Flor y Bolívar, 2 do. piso, Redondel del Liceo Cevallos.',
     descripcion: 'Centro de entrenamiento industrial y asesoría para exportadores.',
-    link: '/contacto'
+    link: '/contacto',
+    tel:'+593 939898048'
   },
   {
     imagen: ImageFour,
     nombre: 'Guayaquil',
     direccion: 'Universidad Casa Grande, frente al CC Albán Borja',
     descripcion: 'Conferencias, cursos y alianzas con la industria de la moda internacional.',
-    link: '/contacto'
+    link: '/contacto',
+    tel:'+593 990888619'
   },
   {
     imagen: ImageFive,
     nombre: 'Cuenca',
     direccion: 'Padre Aguirre 16-50 y Héroes de Verdeloma',
     descripcion: 'Diseño de autor, moda artesanal y eventos anuales de moda.',
-    link: '/contacto'
+    link: '/contacto',
+    tel:'+593 990888619'
   },
 ];
 
@@ -69,6 +77,7 @@ const SedeSeccion = (id = '') => {
           <SedeCard key={idx} {...sede} />
         ))}
       </div>
+      
     </section>
   );
 };

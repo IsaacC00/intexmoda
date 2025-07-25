@@ -1,3 +1,4 @@
+import { number } from "framer-motion";
 import { Phone, MapPin, Mail } from "lucide-react";
 
 const ContactInfo = () => {
@@ -25,8 +26,9 @@ const ContactInfo = () => {
         <div key={index} className="flex flex-row gap-4 ">
           <div>{item.icon}</div>
           <div>
-            <h4 className="text-lg font-semibold">{item.label}</h4>
+            <h4 className="text-lg font-semibold">{item.label}</h4>  
             <p className="text-gray-600">{item.text}</p>
+
           </div>
         </div>
       ))}
